@@ -99,14 +99,12 @@ function Navbar({ className }: { className?: string }) {
               <div className="flex flex-col items-center space-y-4 text-sm">
                 <HoveredLink href="/allproduct">All Products</HoveredLink>
                 <HoveredLink href="/about">About Us</HoveredLink>
-                <HoveredLink href="/conatct">Contact Us</HoveredLink>
               </div>
             </MenuItem>
           </div>
           <div className="flex items-center justify-between gap-5 max-sm:hidden">
             <Link href={"/allproduct"}>All Products</Link>
-            <Link href={"/about"}>About</Link>
-            <Link href={"/contact"}>Contact</Link>
+            <Link href={"/about"}>About Us</Link>
           </div>
         </div>
       </Menu>
