@@ -35,13 +35,13 @@ export function AnimatedPin({ product }: Props) {
               </div>
             </span>
           </div>
-          <div className="product-card_img-container">
+          <div className="product-card_img-container ">
             <Image
               src={product.image}
               alt={product.title}
               height={700}
               width={700}
-              className="product-card_img"
+              className="product-card_img "
             />
           </div>
         </div>

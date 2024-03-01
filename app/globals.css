@@ -140,7 +140,7 @@
   }
 
   .product-card_img {
-    @apply max-h-[200px] object-contain w-full h-full  rounded-3xl;
+    @apply max-h-[200px] object-contain w-full h-full;
   }
 
   .product-title {
