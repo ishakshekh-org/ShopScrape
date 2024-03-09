@@ -1,7 +1,7 @@
 import { TextGenerate } from "@/components/animated_components/TextGnerateEffect";
 import { Tooltip } from "@/components/animated_components/ToolTip";
-import Loading from "@/components/loading";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 const index = () => {
   const words =

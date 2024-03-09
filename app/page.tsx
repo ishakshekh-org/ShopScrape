@@ -3,10 +3,10 @@ import SearchBar from "@/components/SearchBar";
 import { AnimatedPin } from "@/components/animated_components/CardHover";
 import { TextGenerate } from "@/components/animated_components/TextGnerateEffect";
 import { Typewriter } from "@/components/animated_components/TypeWriter";
-import Loading from "@/components/loading";
 import { getAllProducts } from "@/lib/actions";
 import Image from "next/image";
 import { Suspense } from "react";
+import Loading from "./loading";
 
 const Home = async () => {
   const allProducts = await getAllProducts();

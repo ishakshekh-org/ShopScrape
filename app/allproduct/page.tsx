@@ -1,8 +1,8 @@
 import { AnimatedPin } from "@/components/animated_components/CardHover";
 import { TextGenerate } from "@/components/animated_components/TextGnerateEffect";
-import Loading from "@/components/loading";
 import { getAllProducts } from "@/lib/actions";
 import React, { Suspense } from "react";
+import Loading from "./loading";
 
 const allproduct = async () => {
   const allProducts = await getAllProducts();

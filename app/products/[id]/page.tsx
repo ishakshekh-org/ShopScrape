@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Suspense } from "react";
-import Loading from "../../../components/loading";
+import Loading from "./loading";
 
 type Props = {
   params: { id: string };
