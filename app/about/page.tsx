@@ -1,5 +1,7 @@
 import { TextGenerate } from "@/components/animated_components/TextGnerateEffect";
 import { Tooltip } from "@/components/animated_components/ToolTip";
+import Loading from "@/components/loading";
+import { Suspense } from "react";
 
 const index = () => {
   const words =
@@ -7,21 +9,23 @@ const index = () => {
 
   return (
     <>
-      <section className="px-6 md:px-20 py-20 w-full h-screen">
-        <div className="flex flex-col justify-center items-center">
-          <div className="mb-5">
-            <TextGenerate words="About US" className="text-5xl sm:text-7xl" />
-          </div>
+      <Suspense fallback={<Loading />}>
+        <section className="px-6 md:px-20 py-20 w-full h-screen">
+          <div className="flex flex-col justify-center items-center">
+            <div className="mb-5">
+              <TextGenerate words="About US" className="text-5xl sm:text-7xl" />
+            </div>
 
-          <div className="mt-5">
-            <Tooltip />
-          </div>
+            <div className="mt-5">
+              <Tooltip />
+            </div>
 
-          <div className="text-center ">
-            <TextGenerate words={words} className="sm:text-2xl text-lg" />
+            <div className="text-center ">
+              <TextGenerate words={words} className="sm:text-2xl text-lg" />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Suspense>
     </>
   );
 };

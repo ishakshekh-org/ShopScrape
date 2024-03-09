@@ -4,6 +4,7 @@ import { FormEvent, Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { addUserEmailToProduct } from "@/lib/actions";
+import toast, { Toaster } from "react-hot-toast";
 
 interface Props {
   productId: string;
@@ -23,6 +24,14 @@ const Modal = ({ productId }: Props) => {
     setIsSubmitting(false);
     setEmail("");
     closeModal();
+    toast.success("Email Successfully Sent!", {
+      icon: "👏",
+      style: {
+        borderRadius: "10px",
+        background: "#333",
+        color: "#fff",
+      },
+    });
   };
 
   const openModal = () => setIsOpen(true);
@@ -31,6 +40,7 @@ const Modal = ({ productId }: Props) => {
 
   return (
     <>
+      <Toaster />
       <button type="button" className="btn" onClick={openModal}>
         Track
       </button>

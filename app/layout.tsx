@@ -28,12 +28,12 @@ export default function RootLayout({
         <div className="bg-fuchsia-900 w-60 h-60 rounded-full fixed -z-10 blur-[300px] bottom-44 right-[50rem] max-sm:top-96"></div>
         <div className="bg-secondary w-60 h-60 rounded-full fixed -z-10 blur-[300px] top-12 right-96 max-sm:top-96"></div> */}
 
-        <div className="relative">
+        <div className="relative h-full w-full">
           <SparkBG />
         </div>
 
         <main
-          className="max-w-10xl mx-auto relative z-10 mt-20"
+          className="max-w-10xl mx-auto relative z-10 pt-10"
           suppressHydrationWarning
         >
           <Nav />
