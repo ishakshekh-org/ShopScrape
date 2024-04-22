@@ -6,7 +6,7 @@ const people = [
     id: 1,
     name: "Aadil Khan",
     designation: "Full Stack Developer",
-    image: "/assets/images/ishak.jpg",
+    image: "/assets/images/ishak.jpeg",
   },
   {
     id: 2,
